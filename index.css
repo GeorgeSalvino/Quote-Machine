@@ -1,0 +1,64 @@
+
+#quoteMachine{
+	font-family: 'Slabo 27px', serif;
+}
+
+blockquote {
+  border-left:0 !important;
+  margin: 1.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align:justify;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+.jumbotron{
+  margin-top:20px
+}
+
+#quotes{
+  background: #f9f9f9;
+  border-radius:10px;
+  padding-bottom:20px;
+}
+
+#quote-title{
+  margin-bottom:20px;
+  font-family: 'Kumar One', cursive;
+}
+
+.jumbotron{
+  background-image:url("http://unsplash.com/photos/uZxT3njDQYc/download?force=true")
+}
+
+#quotes{
+  max-width:500px;
+  margin-left: auto;
+  margin-right: auto;
+  display:inline-block
+}
+
+.fa-twitter-square{
+  margin-left:20px;
+  float:left;
+  font-size:40px !important;
+}
+
+button{
+  float:right;
+  margin-right:20px !important;
+}
+
+#shiverz{
+  margin-top:5px;
+  font-family: 'Kumar One', cursive;
+}
