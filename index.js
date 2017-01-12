@@ -24,6 +24,9 @@ $('#get-another-quote-button').on('click', function(e) {
       },
       cache: false
     });
+  xhrFields: {
+        withCredentials: false
+      } 
     $("body,.btn").animate({backgroundColor:randomColor()})
     var tweetText = $("#quote-content").text();
   $("a").attr("href","https://twitter.com/intent/tweet?text="+  tweetText)
@@ -31,7 +34,7 @@ $('#get-another-quote-button').on('click', function(e) {
 
 $( document ).ready(function(e){
     $.ajax( {
-      url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+      url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&origin=https://codepen.io&format=jsonp&filter[posts_per_page]=1',dataType: "jsonp",
       success: function(data) {
         var post = data.shift(); // The data is an array of posts. Grab the first one.
         $('#quote-title').text(post.title);
